@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this file prints Best School 10 times using the until command
+
+count=0
+
+until [ $count -gt 9 ]; do
+	echo "Best School"
+	(( count++ ))
+done
