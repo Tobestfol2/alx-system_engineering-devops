@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# a program that output it's own pid
+
+echo "$$"
