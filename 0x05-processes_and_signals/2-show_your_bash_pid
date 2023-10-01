@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# shows tge pid of bash
+# shellcheck disable=SC2009
+
+pidof bash
