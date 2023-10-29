@@ -1,0 +1,75 @@
+User's Intent:
+
+A person wants to visit the website hosted at www.foobar.com.
+Domain Name Registration:
+
+The web address "www.foobar.com" is like a signpost on the internet. It's officially registered and set up with a service that manages these signposts called DNS (Domain Name System) provider.
+Server Responsibilities:
+
+There's a computer with the unique address 8.8.8.8, and it's like the home of the website. It hosts all the files and data needed for the site to work.
+Server Components:
+
+Operating System (OS):
+The server computer uses a special software called Linux (like Ubuntu or CentOS) as its foundation.
+Web Server (Apache):
+It's like the software that organizes and serves the web pages when you visit the site.
+Think of it as the waiter at a restaurant, taking your order and bringing you food (web content) when you ask for it.
+Database (MySQL):
+This is like a secure vault for storing all the important information of the website, such as user accounts and content.
+Scripting Language (e.g., PHP):
+It's a tool that helps create the dynamic parts of the website, like updating content in real-time.
+Website Code:
+The actual building blocks of the website, written in a language like PHP, and stored on the server.
+User Interaction:
+
+When you type www.foobar.com in your browser and press Enter, this is what happens:
+Your computer asks the internet where to find www.foobar.com (like asking for directions).
+The internet tells your computer that the website is at 8.8.8.8.
+Your computer sends a request to the server at 8.8.8.8, saying, "I'd like to see the website."
+The server, using Apache, sends you the website's pages, whether they're already made (like serving a picture) or makes them on the spot (like using a recipe).
+If the site needs information from the database (like your user account), it fetches it.
+Finally, the server sends back the web page to your computer, and your browser shows it to you, just like reading a book
+
+
+
+
+
+
+
+SERVERS
+Think of servers like the backbone of the internet and your home or office network. They're like powerful machines that do the heavy lifting, making it possible for all your devices to share stuff and access services. Servers can be different shapes and sizes, kind of like tools in a toolbox, and they're designed to do specific jobs based on what you and your devices need.
+
+Role of a domain name
+Domain names are like the addresses of the internet. They make it easy for us to find websites and send emails. Think of them as a bridge between what we can understand and the complicated stuff that happens behind the scenes on the internet. They turn our words into directions for the internet to get us to the right place.
+
+What type of DNS record www is in www.foobar.com
+The "www" in a web address, like "www.foobar.com," is usually linked to something called a "CNAME" (Canonical Name) record. Think of a CNAME record as a way to give a website a nickname. In this case, "www.foobar.com" has a CNAME record that points to the real name, which is "foobar.com." It's like saying, "When you see 'www,' it's the same as 'foobar.com'."
+
+
+Role of a Web Server
+The web server plays a central role in a web infrastructure, which includes handling HTTP demands, load balanacing, Servicing contents, demands routng, monitoring.
+
+Role application of server
+Integration with different services, scalability, security, management, database interaction, Dynamic content creation.
+
+
+The roles of database are 
+data storage, data retieval, data security, data integrity, dat indexing, data backup, data recovery, data integration, application support, compliance, concurrent access, data redundancy, data analysis, data auditing.
+
+What is the server using to communicate with the computer of the user requesting the website
+The server uses the http request, server response and content delivery
+
+
+Issues with SPOF
+Downtime Downtime is the most immediate and apparent problem associated with Single Points of Failure (SPOFs). When a crucial component or system experiences a failure, it can result in disruptions, causing service interruptions, reduced productivity, and inconvenience for users or customers.
+
+
+Reduced readabiity
+SPOFs diminish the overall reliability of a system. In the absence of redundancy or failover mechanisms, the system becomes susceptible to interruptions and breakdowns, undermining its dependabily 
+
+scalability challenges 
+A SPOF can hinder the scalability of a system. When demand grows, the system cannot easily adapt to accommodate more users or increased workload without risking failure.
+
+Security Risks: In certain instances, a SPOF can transform into a security risk. When a single component, like a firewall or authentication server, is compromised, it has the potential to jeopardize the security of the entire system.
+
+Challenges in Maintenance: Dealing with a Single Point of Failure (SPOF) during maintenance or upgrades can be challenging. Temporarily taking the component offline for maintenance results in system downtime, which can disrupt users' operations.
