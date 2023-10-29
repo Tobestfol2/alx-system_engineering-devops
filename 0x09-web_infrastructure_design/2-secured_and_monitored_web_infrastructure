@@ -1,0 +1,19 @@
+Firewalls (1 for each server and one for the load balancer): Firewalls act as security guards, controlling the data coming in and going out of our system to prevent unauthorized access and potential threats.
+
+SSL certificates are like secret codes that hide information as it travels between the user and the server, making sure nobody can sneak a peek at sensitive data.
+
+Monitoring tools help us keep an eye on how well our servers are doing. They collect data on things like performance, temperature, and error logs.
+
+Firewalls are there to make sure only the right kind of data is allowed into our system.
+
+We use HTTPS to keep the data safe as it travels between the user and the server. This way, even if someone tries to intercept it, they can't understand it.
+
+Monitoring helps us check how our system is performing. It collects data from different places, like how much the computer is working (CPU usage) and how data is moving around the network.
+
+To watch how many requests are coming in each second, I'd set up monitoring tools to count how many new requests are made within a short time, like a minute or a second.
+
+ISSUES:
+
+When we decrypt data in the load balancer, it's risky because if the server gets hacked or someone on our team goes rogue, they could misuse the exposed information.
+Having only one SQL server that accepts write requests is a Single Point of Failure (SPOF) because if it goes down, users can't add new information to the database.
+Using servers with the same components (database, web server, and application server) might cause problems with redundancy, scalability, and resilience, making the system less flexible and more vulnerable.
