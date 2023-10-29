@@ -1,0 +1,10 @@
+We're adding more web servers, application servers, and database systems to make our system more reliable. This way, if one server has a problem, the others can still handle requests.
+
+We've also introduced a load balancer to evenly distribute the work among these servers, and it follows a specific plan called Round Robin Scheduling since all servers have the same capacity.
+
+Our load balancing system is set up in "Active-Active" mode, which means all servers are working at the same time. "Active-Passive" is used when one server is on standby and only takes over if the main server fails.
+
+For the database, we have a main node (master) and replica nodes (slaves). The main node handles writing data, and the replicas copy data from the main one. This helps with reading data quickly and ensures we don't lose data if something goes wrong.
+
+The Single Points of Failure (SPOF) are in the Application server, load balancer, and the primary database when it comes to writing data.
+We need to address some security issues like setting up a firewall, using SSL or HTTP to protect data from being intercepted, and implementing monitoring so that we can keep an eye on how well everything is running and catch problems before they cause failures.
