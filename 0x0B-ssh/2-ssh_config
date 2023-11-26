@@ -1,0 +1,5 @@
+Host school_server
+        HostName 100.25.16.23
+        User ubuntu
+        PreferredAuthentications publickey
+        IdentityFile ~/.ssh/school
