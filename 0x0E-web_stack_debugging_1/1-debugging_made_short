@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this script curls to port 80
+
+sudo service nginx start
