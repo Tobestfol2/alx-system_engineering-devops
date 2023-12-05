@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Update package list and install Nginx
+#sudo apt update
+sudo apt install -y nginx
+
+# Create a default Nginx configuration file
+cat <<EOF > /etc/nginx/nginx.conf
+events{}
+http {
+	server {
+	    listen 80 default_server;
+	    listen [::]:80 default_server;
+	    server_name _;
+	    root /usr/share/nginx/html;
+	}
+}
+EOF
+
+# Create a simple HTML file for testing
+# Restart Nginx to apply changes
+sudo service nginx restart
+
+# Display Nginx status and active listening ports
+sudo service nginx status
+#netstat -tuln | grep LISTEN
+#echo "Nginx has been configured and is now listening on port 80."
